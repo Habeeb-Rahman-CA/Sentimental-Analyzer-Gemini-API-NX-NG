@@ -1,0 +1,7 @@
+<div>
+    @if (sentiment() && !loading()) {
+    <p class="bg-slate-800 rounded-xl p-2 text-center mx-auto w-40">{{sentiment()?.sentiment}} {{sentiment()?.emoji}}</p>
+    } @else if (loading()) {
+    <p class="mx-auto w-40">...</p>
+    }
+</div>
